@@ -24,7 +24,7 @@ public class SendPrice extends Behaviour {
         this.topic = topic;
         this.producerData = producerData;
         this.currentProduserData = currentProduserData;
-        log.debug("reg topic");
+//        log.debug("reg topic");
         mt = MessageTemplate.and(
                 MessageTemplate.MatchPerformative(ACLMessage.PROPOSE),
                 MessageTemplate.and(

@@ -18,6 +18,5 @@ public class Auction extends ParallelBehaviour {
 
     public void onStart() {
         addSubBehaviour(new ReceiveAnswers(topic, currentProduserData));
-        addSubBehaviour(new StopAuction(topic));
     }
 }

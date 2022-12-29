@@ -32,278 +32,68 @@ public class AgentTest {
     @Test
     @SneakyThrows
     void scene1Test(){
-
         createDistributor("D1");
-        createProducer("P1", 12);
-
+        createDistributor("D2");
+        createDistributor("D3");
+        createProducer("P1", 50);
         Thread.sleep(100);
-
-        createConsumer("L1", 10, 250);
-
+        createConsumer("L1", 5, 200);
+        createConsumer("L2", 7, 300);
+        createConsumer("L3", 8, 250);
         Thread.sleep(500);
-
-
         Thread.sleep(time);
         resBeh = inner.getBeh();
-
         Thread.sleep(500);
-
         Assertions.assertEquals(0, resBeh.onEnd());
-
         }
-
     /*
-    условия:    избыток мощности у одного производителя, 2 производителя
-    результат:  1 (запрос принят от одного производителя, после аукциона)
+    Торги с единственным производителем. Задать такое количество покупаемой мощности,
+    чтобы только 1 поставщик смог удовлетворить запросу.
+    Ожидаемый результат: агент-производитель продает по завышенной цене мощность,
+    однако контракт отклоняется поставщиком из-за большой цены.
     */
 
     @Test
     @SneakyThrows
     void scene2Test(){
-
         createDistributor("D1");
-        createProducer("P1", 10);
-        createProducer("P2", 12);
-
+        createProducer("P1", 15);
+        createProducer("P2", 20);
         Thread.sleep(100);
-
-        createConsumer("L1", 10, 250);
-
+        createConsumer("L1", 10, 300);
         Thread.sleep(500);
-
-
         Thread.sleep(time);
         resBeh = inner.getBeh();
-
         Thread.sleep(500);
-
         Assertions.assertEquals(1, resBeh.onEnd());
-
     }
-
     /*
-    условия:    избыток мощности у двух производителей в сумме, 3 производителя
-    результат:  2 (запрос принят от двух производителей, после аукциона и разбиения контракта)
+    Успешный аукцион с двумя участниками. Задать такое количество покупаемой мощности,
+    чтобы два поставщика смогли удовлетворить запросу и начали процесс снижения цены.
+    Ожидаемый результат: агенты соревнуются друг с другом для право продать ЭЭ,
+    и один из агентов-производителей продает по удовлетворительной цене запрошенную мощность.
     */
 
     @Test
     @SneakyThrows
     void scene3Test(){
-
-        createDistributor("D1");
-        createProducer("P1", 15);
-        createProducer("P2", 18);
-        createProducer("P3", 5);
-
-        Thread.sleep(100);
-
-        createConsumer("L1", 20, 300);
-
-        Thread.sleep(500);
-
-
-        Thread.sleep(time);
-        resBeh = inner.getBeh();
-
-        Thread.sleep(500);
-
-        Assertions.assertEquals(2, resBeh.onEnd());
-
-    }
-
-    /*
-    условия:    у двух производителей не хватает мощности, 3 производителя
-    результат:  3 (запрос принят от трех производителей, после аукциона и разбиения контракта)
-    */
-
-    @Test
-    @SneakyThrows
-    void scene4Test(){
-
         createDistributor("D1");
         createProducer("P1", 10);
-        createProducer("P2", 8);
-        createProducer("P3", 9);
-
+        createProducer("P2", 12);
         Thread.sleep(100);
-
-        createConsumer("L1", 20, 300);
-
+        createConsumer("L1", 10, 250);
         Thread.sleep(500);
-
-
         Thread.sleep(time);
         resBeh = inner.getBeh();
-
         Thread.sleep(500);
-
-        Assertions.assertEquals(3, resBeh.onEnd());
-
+        Assertions.assertEquals(1, resBeh.onEnd());
     }
-
     /*
-    условия:    у трех производителей не хватает мощности, 4 производителя
-    результат:  4 (запрос принят от 4 производителей, после аукциона и разбиения контракта)
+    Дефицит мощности в системе. Задать такое количество покупаемой мощности,
+    что ни один производитель не может полностью удовлетворить запрос.
+    Ожидаемый результат: агент дистрибьютор должен разбить контракт на несколько частей
+    и закупить требуемое количество у различных поставщиков.
     */
-
-    @Test
-    @SneakyThrows
-    void scene5Test(){
-
-        createDistributor("D1");
-        createProducer("P1", 10);
-        createProducer("P2", 8);
-        createProducer("P3", 9);
-        createProducer("P4", 9);
-
-        Thread.sleep(100);
-
-        createConsumer("L1", 30, 300);
-
-        Thread.sleep(500);
-
-
-        Thread.sleep(time);
-        resBeh = inner.getBeh();
-
-        Thread.sleep(500);
-
-        Assertions.assertEquals(4, resBeh.onEnd());
-    }
-
-    /*
-    условия:    избыток мощности у двух производителей в сумме, итоговая цена
-                после спилита больше макисмальной, 2 производителя
-    результат:  0 (запрос отклонен - 0 производителей)
-    */
-
-    @Test
-    @SneakyThrows
-    void scene6Test(){
-
-        createDistributor("D1");
-        createProducer("P1", 10);
-        createProducer("P2", 11);
-
-        Thread.sleep(100);
-
-        createConsumer("L1", 20, 199.85);
-
-        Thread.sleep(500);
-
-
-        Thread.sleep(time);
-        resBeh = inner.getBeh();
-
-        Thread.sleep(500);
-
-        Assertions.assertEquals(0, resBeh.onEnd());
-    }
-
-     /*
-    условия:    в системе не хватает мощности, 3 производителя
-    результат:  0 (запрос отклонен - 0 производителей)
-    */
-
-    @Test
-    @SneakyThrows
-    void scene7Test(){
-
-        createDistributor("D1");
-        createProducer("P1", 5);
-        createProducer("P2", 6);
-        createProducer("P3", 7);
-
-        Thread.sleep(100);
-
-        createConsumer("L1", 20, 1000);
-
-        Thread.sleep(500);
-
-
-        Thread.sleep(time);
-        resBeh = inner.getBeh();
-
-        Thread.sleep(500);
-
-        Assertions.assertEquals(0, resBeh.onEnd());
-    }
-
-    /*
-    условия:    в системе не хватает мощности, 4 производителя
-    результат:  0 (запрос отклонен - 0 производителей)
-    */
-
-    @Test
-    @SneakyThrows
-    void scene8Test(){
-
-        createDistributor("D1");
-        createProducer("P1", 2);
-        createProducer("P2", 3);
-        createProducer("P3", 4);
-        createProducer("P4", 5);
-
-        Thread.sleep(100);
-
-        createConsumer("L1", 20, 1000);
-
-        Thread.sleep(500);
-
-
-        Thread.sleep(time);
-        resBeh = inner.getBeh();
-
-        Thread.sleep(500);
-
-        Assertions.assertEquals(0, resBeh.onEnd());
-    }
-
-    /*
-    условия:    нет дистрибьютера
-    результат:  -1 (no distributor)
-    */
-
-    @Test
-    @SneakyThrows
-    void scene9Test(){
-
-        createProducer("P1", 2);
-
-        Thread.sleep(100);
-
-        createConsumer("L1", 20, 1000);
-
-        Thread.sleep(500);
-
-        Assertions.assertEquals(-1, inner.onEnd());
-
-    }
-
-       /*
-    условия:    нет производителя
-    результат:  0 (запрос отклонен - 0 производителей)
-    */
-
-    @Test
-    @SneakyThrows
-    void scene10Test(){
-        createDistributor("D1");
-
-        Thread.sleep(100);
-
-        createConsumer("L1", 20, 1000);
-
-        Thread.sleep(500);
-
-        Thread.sleep(time);
-        resBeh = inner.getBeh();
-
-        Thread.sleep(500);
-
-        Assertions.assertEquals(0, resBeh.onEnd());
-
-    }
 
     @BeforeEach
     void beforeEach(){
@@ -327,9 +117,6 @@ public class AgentTest {
         });
     }
 
-    /*
-    producer price = 1000/power + 100
-    */
     void createProducer(String name, double power) {
         kit.createAgent(name, new OneShotBehaviour() {
             @Override

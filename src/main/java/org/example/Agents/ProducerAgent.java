@@ -20,7 +20,7 @@ public class ProducerAgent extends Agent {
     @Override
     protected void setup() {
         DfHelper.registerAgent(this, "producer");
-        log.info("agent {} is start", this.getLocalName());
+        log.info("agent {} is ready", this.getLocalName());
 
         ProducerCFG cfg;
         try {

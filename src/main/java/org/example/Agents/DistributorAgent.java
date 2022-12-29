@@ -13,7 +13,7 @@ public class DistributorAgent extends Agent {
     @Override
     protected void setup() {
         DfHelper.registerAgent(this, "distributor:L" + getLocalName().substring(1));
-        log.info("agent {} is start", getLocalName());
+        log.info("agent {} is ready", getLocalName());
         addBehaviour(new AcceptRequest());
     }
 }
