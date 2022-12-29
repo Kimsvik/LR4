@@ -18,7 +18,7 @@ public class ConsumerAgent extends Agent {
     @Override
     protected void setup() {
         DfHelper.registerAgent(this, "consumer:" + getLocalName());
-        log.info("agent {} is start", getLocalName());
+        log.info("agent {} is ready", getLocalName());
 
         ConsumerCFG cfg;
         try {
