@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--foodCord-->
+<cfg>
+    <Pnom>18.7</Pnom>
+    <maxPrice>200.0</maxPrice>
+    <load>70</load> <!--H1-->
+    <load>70</load> <!--H2-->
+    <load>70</load> <!--H3-->
+    <load>70</load> <!--H4-->
+    <load>70</load> <!--H5-->
+    <load>70</load> <!--H6-->
+    <load>70</load> <!--H7-->
+    <load>70</load> <!--H8-->
+    <load>80</load> <!--H9-->
+    <load>80</load> <!--H10-->
+    <load>80</load> <!--H11-->
+    <load>80</load> <!--H12-->
+    <load>95</load> <!--H13-->
+    <load>100</load> <!--H14-->
+    <load>90</load> <!--H15-->
+    <load>90</load> <!--H16-->
+    <load>100</load> <!--H17-->
+    <load>100</load> <!--H18-->
+    <load>85</load> <!--H19-->
+    <load>85</load> <!--H20-->
+    <load>90</load> <!--H21-->
+    <load>90</load> <!--H22-->
+    <load>90</load> <!--H23-->
+    <load>80</load> <!--H24-->
+</cfg>
+
+
+
