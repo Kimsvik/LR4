@@ -2,7 +2,7 @@ package org.example.Agents;
 
 import org.example.DfHelper;
 import org.example.AutorunnableAgent;
-import org.example.DistributerBehaviour.AcceptRequest;
+import org.example.BDistributer.AcceptRequest;
 import jade.core.Agent;
 import lombok.extern.slf4j.Slf4j;
 

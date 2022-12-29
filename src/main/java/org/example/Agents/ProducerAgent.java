@@ -2,9 +2,9 @@ package org.example.Agents;
 
 import org.example.DfHelper;
 import org.example.AutorunnableAgent;
-import org.example.Model.ProducerData;
-import org.example.ProducerBehaviour.ReceiveTopicName;
-import org.example.cfg.ProducerCFG;
+import org.example.External.ProducerData;
+import org.example.BProducer.ReceiveTopicName;
+import org.example.CFG.ProducerCFG;
 import jade.core.Agent;
 import lombok.extern.slf4j.Slf4j;
 

@@ -2,8 +2,8 @@ package org.example.Agents;
 
 import org.example.DfHelper;
 import org.example.AutorunnableAgent;
-import org.example.ConsumerBehaviour.SendRequest;
-import org.example.cfg.ConsumerCFG;
+import org.example.BConsumer.SendRequest;
+import org.example.CFG.ConsumerCFG;
 import jade.core.Agent;
 import lombok.extern.slf4j.Slf4j;
 

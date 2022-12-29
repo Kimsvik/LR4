@@ -36123,3 +36123,34 @@
 29.12.2022 15:03:23.331 [P1] INFO  o.e.P.ResultAuction - leaving auction in topic:D3
 29.12.2022 15:03:23.331 [P2] INFO  o.e.P.ResultAuction - left 5.535569864871501 power
 29.12.2022 15:03:23.331 [P1] INFO  o.e.P.ResultAuction - left 18.0 power
+29.12.2022 15:36:02.629 [main] INFO  o.r.Reflections - Reflections took 60 ms to scan 1 urls, producing 13 keys and 38 values
+29.12.2022 15:36:02.994 [L2] INFO  o.e.A.ConsumerAgent - agent L2 is ready
+29.12.2022 15:36:02.993 [D3] INFO  o.e.A.DistributorAgent - agent D3 is start
+29.12.2022 15:36:02.995 [P2] INFO  o.e.A.ProducerAgent - agent P2 is start
+29.12.2022 15:36:02.997 [D2] INFO  o.e.A.DistributorAgent - agent D2 is start
+29.12.2022 15:36:02.998 [L1] INFO  o.e.A.ConsumerAgent - agent L1 is ready
+29.12.2022 15:36:02.999 [P1] INFO  o.e.A.ProducerAgent - agent P1 is start
+29.12.2022 15:36:03.000 [L3] INFO  o.e.A.ConsumerAgent - agent L3 is ready
+29.12.2022 15:36:03.001 [P3] INFO  o.e.A.ProducerAgent - agent P3 is start
+29.12.2022 15:36:03.002 [D1] INFO  o.e.A.DistributorAgent - agent D1 is start
+29.12.2022 15:36:03.299 [L1] INFO  o.e.C.SendRequest - send msg {"maxPrice":748.0,"power":3.74,"time":1} to 1 distributors
+29.12.2022 15:36:03.300 [L2] INFO  o.e.C.SendRequest - send msg {"maxPrice":3553.0,"power":17.765,"time":1} to 1 distributors
+29.12.2022 15:36:03.301 [L3] INFO  o.e.C.SendRequest - send msg {"maxPrice":2618.0,"power":13.09,"time":1} to 1 distributors
+29.12.2022 15:36:03.840 [P3] INFO  o.e.P.SendPrice - P3 does not participate in the auction in topic topic:D1
+29.12.2022 15:36:03.840 [P2] INFO  o.e.P.SendPrice - min price: 280.649874251603; start price: 561.299748503206
+29.12.2022 15:36:03.840 [P1] INFO  o.e.P.SendPrice - min price: 155.55555555555554; start price: 311.1111111111111
+29.12.2022 15:36:03.840 [P3] INFO  o.e.P.SendPrice - P3 does not participate in the auction in topic topic:D2
+29.12.2022 15:36:03.840 [P1] INFO  o.e.P.SendPrice - P1 participates in the auction in topic topic:D2
+29.12.2022 15:36:03.840 [P2] INFO  o.e.P.SendPrice - P2 participates in the auction in topic topic:D2
+29.12.2022 15:36:03.840 [P3] INFO  o.e.P.SendPrice - P3 does not participate in the auction in topic topic:D3
+29.12.2022 15:36:03.840 [P1] INFO  o.e.P.SendPrice - min price: 155.55555555555554; start price: 311.1111111111111
+29.12.2022 15:36:03.840 [P2] INFO  o.e.P.SendPrice - min price: 280.649874251603; start price: 561.299748503206
+29.12.2022 15:36:03.841 [P1] INFO  o.e.P.SendPrice - P1 participates in the auction in topic topic:D1
+29.12.2022 15:36:03.841 [P2] INFO  o.e.P.SendPrice - P2 participates in the auction in topic topic:D1
+29.12.2022 15:36:03.841 [P1] INFO  o.e.P.SendPrice - min price: 155.55555555555554; start price: 311.1111111111111
+29.12.2022 15:36:03.841 [P2] INFO  o.e.P.SendPrice - min price: 280.649874251603; start price: 561.299748503206
+29.12.2022 15:36:03.841 [P1] INFO  o.e.P.SendPrice - P1 participates in the auction in topic topic:D3
+29.12.2022 15:36:03.841 [P2] INFO  o.e.P.SendPrice - P2 participates in the auction in topic topic:D3
+29.12.2022 15:36:03.854 [P2] INFO  o.e.P.ReceiveAnswers - P2 stop down price in topic:D2
+29.12.2022 15:36:03.854 [P2] INFO  o.e.P.ReceiveAnswers - P2 stop down price in topic:D1
+29.12.2022 15:36:03.855 [P2] INFO  o.e.P.ReceiveAnswers - P2 stop down price in topic:D3
