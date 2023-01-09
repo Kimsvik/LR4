@@ -1,13 +1,13 @@
 package LR4;
 
-import org.example.DfHelper;
+import org.example.Support.DfHelper;
 import org.example.BConsumer.SendRequest;
 import org.example.BDistributor.AcceptRequest;
 import org.example.Topic.ProducerData;
 import org.example.BProducer.ReceiveTopicName;
 import org.example.CFG.ConsumerCFG;
 import org.example.CFG.ProducerCFG;
-import org.example.TimeClass;
+import org.example.Support.TimeClass;
 import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.OneShotBehaviour;
 import lombok.SneakyThrows;

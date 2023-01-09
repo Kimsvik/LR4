@@ -45437,3 +45437,148 @@
 09.01.2023 17:09:51.582 [P2] INFO  o.e.B.SendPrice - P2 participates in the auction in topic topic:D1
 09.01.2023 17:09:51.582 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D1
 09.01.2023 17:09:51.605 [P1] INFO  o.e.B.ReceiveAnswers - P1 stop down price in topic:D1
+09.01.2023 17:18:19.902 [main] INFO  o.r.Reflections - Reflections took 76 ms to scan 1 urls, producing 13 keys and 38 values
+09.01.2023 17:18:20.303 [L2] INFO  o.e.A.ConsumerAgent - agent L2 is start
+09.01.2023 17:18:20.304 [L1] INFO  o.e.A.ConsumerAgent - agent L1 is start
+09.01.2023 17:18:20.302 [D3] INFO  o.e.A.DistributorAgent - agent D3 is start
+09.01.2023 17:18:20.306 [P2] INFO  o.e.A.ProducerAgent - agent P2 is start
+09.01.2023 17:18:20.307 [L3] INFO  o.e.A.ConsumerAgent - agent L3 is start
+09.01.2023 17:18:20.309 [D2] INFO  o.e.A.DistributorAgent - agent D2 is start
+09.01.2023 17:18:20.310 [D1] INFO  o.e.A.DistributorAgent - agent D1 is start
+09.01.2023 17:18:20.312 [P3] INFO  o.e.A.ProducerAgent - agent P3 is start
+09.01.2023 17:18:20.314 [P1] INFO  o.e.A.ProducerAgent - agent P1 is start
+09.01.2023 17:18:20.646 [L3] INFO  o.e.B.SendRequest - send msg {"maxPrice":2618.0,"power":13.09,"time":1} to 1 distributors
+09.01.2023 17:18:20.647 [L1] INFO  o.e.B.SendRequest - send msg {"maxPrice":748.0,"power":3.74,"time":1} to 1 distributors
+09.01.2023 17:18:20.649 [L2] INFO  o.e.B.SendRequest - send msg {"maxPrice":3553.0,"power":17.765,"time":1} to 1 distributors
+09.01.2023 17:18:21.189 [P1] INFO  o.e.B.SendPrice - min price: 155.55555555555554; start price: 311.1111111111111
+09.01.2023 17:18:21.189 [P2] INFO  o.e.B.SendPrice - min price: 280.649874251603; start price: 561.299748503206
+09.01.2023 17:18:21.189 [P3] INFO  o.e.B.SendPrice - P3 does not participate in the auction in topic topic:D3
+09.01.2023 17:18:21.191 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D3
+09.01.2023 17:18:21.191 [P3] INFO  o.e.B.SendPrice - P3 does not participate in the auction in topic topic:D2
+09.01.2023 17:18:21.191 [P2] INFO  o.e.B.SendPrice - P2 participates in the auction in topic topic:D3
+09.01.2023 17:18:21.191 [P3] INFO  o.e.B.SendPrice - P3 does not participate in the auction in topic topic:D1
+09.01.2023 17:18:21.191 [P1] INFO  o.e.B.SendPrice - min price: 155.55555555555554; start price: 311.1111111111111
+09.01.2023 17:18:21.191 [P2] INFO  o.e.B.SendPrice - min price: 280.649874251603; start price: 561.299748503206
+09.01.2023 17:18:21.191 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D1
+09.01.2023 17:18:21.191 [P2] INFO  o.e.B.SendPrice - P2 participates in the auction in topic topic:D1
+09.01.2023 17:18:21.191 [P1] INFO  o.e.B.SendPrice - min price: 155.55555555555554; start price: 311.1111111111111
+09.01.2023 17:18:21.191 [P2] INFO  o.e.B.SendPrice - min price: 280.649874251603; start price: 561.299748503206
+09.01.2023 17:18:21.191 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D2
+09.01.2023 17:18:21.191 [P2] INFO  o.e.B.SendPrice - P2 participates in the auction in topic topic:D2
+09.01.2023 17:18:21.205 [P2] INFO  o.e.B.ReceiveAnswers - P2 stop down price in topic:D2
+09.01.2023 17:18:21.206 [P2] INFO  o.e.B.ReceiveAnswers - P2 stop down price in topic:D1
+09.01.2023 17:18:21.206 [P2] INFO  o.e.B.ReceiveAnswers - P2 stop down price in topic:D3
+09.01.2023 17:18:42.629 [D2] INFO  LR4.MockAgent - Mock agent D2 starts 1 behvaiours
+09.01.2023 17:18:42.631 [P1] INFO  LR4.MockAgent - Mock agent P1 starts 1 behvaiours
+09.01.2023 17:18:42.629 [D1] INFO  LR4.MockAgent - Mock agent D1 starts 1 behvaiours
+09.01.2023 17:18:42.629 [D3] INFO  LR4.MockAgent - Mock agent D3 starts 1 behvaiours
+09.01.2023 17:18:42.733 [L1] INFO  LR4.MockAgent - Mock agent L1 starts 1 behvaiours
+09.01.2023 17:18:42.734 [L2] INFO  LR4.MockAgent - Mock agent L2 starts 1 behvaiours
+09.01.2023 17:18:42.734 [L3] INFO  LR4.MockAgent - Mock agent L3 starts 1 behvaiours
+09.01.2023 17:18:42.900 [L3] INFO  o.e.B.SendRequest - send msg {"maxPrice":1200.0,"power":8.0,"time":1} to 1 distributors
+09.01.2023 17:18:42.901 [L2] INFO  o.e.B.SendRequest - send msg {"maxPrice":1400.0,"power":7.0,"time":1} to 1 distributors
+09.01.2023 17:18:42.902 [L1] INFO  o.e.B.SendRequest - send msg {"maxPrice":500.0,"power":5.0,"time":1} to 1 distributors
+09.01.2023 17:18:43.454 [P1] INFO  o.e.B.SendPrice - min price: 120.0; start price: 240.0
+09.01.2023 17:18:43.455 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D2
+09.01.2023 17:18:43.455 [P1] INFO  o.e.B.SendPrice - min price: 120.0; start price: 240.0
+09.01.2023 17:18:43.455 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D1
+09.01.2023 17:18:43.456 [P1] INFO  o.e.B.SendPrice - min price: 120.0; start price: 240.0
+09.01.2023 17:18:43.456 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D3
+09.01.2023 17:18:45.411 [L3] INFO  o.e.B.SendRequest - stop auction
+09.01.2023 17:18:45.412 [L2] INFO  o.e.B.SendRequest - stop auction
+09.01.2023 17:18:45.412 [L1] INFO  o.e.B.SendRequest - stop auction
+09.01.2023 17:18:45.413 [D3] INFO  o.e.B.AcceptRequestPrice - stop auction in topic:D3
+09.01.2023 17:18:45.414 [D3] INFO  o.e.B.CollectBitsParallel - prod P1, price 240.0
+09.01.2023 17:18:45.414 [D2] INFO  o.e.B.AcceptRequestPrice - stop auction in topic:D2
+09.01.2023 17:18:45.414 [D2] INFO  o.e.B.CollectBitsParallel - prod P1, price 240.0
+09.01.2023 17:18:45.414 [D3] INFO  o.e.B.ConfirmPrice - no money: min price 240.0 // 1920.0 > max price 1200.0
+09.01.2023 17:18:45.414 [D2] INFO  o.e.B.ConfirmPrice - no money: min price 240.0 // 1680.0 > max price 1400.0
+09.01.2023 17:18:45.415 [D1] INFO  o.e.B.AcceptRequestPrice - stop auction in topic:D1
+09.01.2023 17:18:45.415 [P1] INFO  o.e.B.ResultAuction - leaving auction in topic:D3
+09.01.2023 17:18:45.415 [D1] INFO  o.e.B.CollectBitsParallel - prod P1, price 240.0
+09.01.2023 17:18:45.415 [P1] INFO  o.e.B.ResultAuction - left 50.0 power
+09.01.2023 17:18:45.415 [D1] INFO  o.e.B.ConfirmPrice - no money: min price 240.0 // 1200.0 > max price 500.0
+09.01.2023 17:18:45.415 [P1] INFO  o.e.B.ResultAuction - leaving auction in topic:D2
+09.01.2023 17:18:45.415 [P1] INFO  o.e.B.ResultAuction - left 50.0 power
+09.01.2023 17:18:45.416 [P1] INFO  o.e.B.ResultAuction - leaving auction in topic:D1
+09.01.2023 17:18:45.416 [P1] INFO  o.e.B.ResultAuction - left 50.0 power
+09.01.2023 17:18:50.311 [L3] INFO  o.e.B.RequestPrice - winner time: 1, no winner producer, req power: 8.0
+09.01.2023 17:18:50.311 [L2] INFO  o.e.B.RequestPrice - winner time: 1, no winner producer, req power: 7.0
+09.01.2023 17:18:50.313 [L1] INFO  o.e.B.RequestPrice - winner time: 1, no winner producer, req power: 5.0
+09.01.2023 17:18:50.512 [L2] INFO  o.e.B.SendRequest - send msg {"maxPrice":1400.0,"power":7.0,"time":2} to 1 distributors
+09.01.2023 17:18:50.512 [L3] INFO  o.e.B.SendRequest - send msg {"maxPrice":1200.0,"power":8.0,"time":2} to 1 distributors
+09.01.2023 17:18:50.515 [L1] INFO  o.e.B.SendRequest - send msg {"maxPrice":500.0,"power":5.0,"time":2} to 1 distributors
+09.01.2023 17:18:50.649 [P1] INFO  o.e.B.ReceiveTopicName - free power 50.0
+09.01.2023 17:18:51.016 [P1] INFO  o.e.B.SendPrice - min price: 120.0; start price: 240.0
+09.01.2023 17:18:51.016 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D3
+09.01.2023 17:18:51.017 [P1] INFO  o.e.B.SendPrice - min price: 120.0; start price: 240.0
+09.01.2023 17:18:51.017 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D2
+09.01.2023 17:18:51.018 [P1] INFO  o.e.B.SendPrice - min price: 120.0; start price: 240.0
+09.01.2023 17:18:51.019 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D1
+09.01.2023 17:18:51.892 [D1] INFO  LR4.MockAgent - Mock agent D1 starts 1 behvaiours
+09.01.2023 17:18:51.893 [P1] INFO  LR4.MockAgent - Mock agent P1 starts 1 behvaiours
+09.01.2023 17:18:51.894 [P2] INFO  LR4.MockAgent - Mock agent P2 starts 1 behvaiours
+09.01.2023 17:18:51.995 [L1] INFO  LR4.MockAgent - Mock agent L1 starts 1 behvaiours
+09.01.2023 17:18:51.997 [L1] INFO  o.e.B.SendRequest - send msg {"maxPrice":3000.0,"power":10.0,"time":1} to 1 distributors
+09.01.2023 17:18:52.501 [P1] INFO  o.e.B.SendPrice - min price: 166.66666666666669; start price: 333.33333333333337
+09.01.2023 17:18:52.501 [P2] INFO  o.e.B.SendPrice - min price: 176.9230769230769; start price: 353.8461538461538
+09.01.2023 17:18:52.502 [P2] INFO  o.e.B.SendPrice - P2 participates in the auction in topic topic:D1
+09.01.2023 17:18:52.502 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D1
+09.01.2023 17:18:52.533 [P2] INFO  o.e.B.ReceiveAnswers - P2 stop down price in topic:D1
+09.01.2023 17:18:54.893 [L1] INFO  o.e.B.SendRequest - stop auction
+09.01.2023 17:18:54.895 [D1] INFO  o.e.B.AcceptRequestPrice - stop auction in topic:D1
+09.01.2023 17:18:54.895 [D1] INFO  o.e.B.CollectBitsParallel - prod P1, price 175.9230769230769
+09.01.2023 17:18:54.895 [D1] INFO  o.e.B.CollectBitsParallel - prod P2, price 176.9230769230769
+09.01.2023 17:18:54.896 [D1] INFO  o.e.B.ConfirmPrice - send confirm to P1
+09.01.2023 17:18:54.896 [P1] INFO  o.e.B.ResultAuction - send ok to D1
+09.01.2023 17:18:54.896 [D1] INFO  o.e.B.ConfirmPrice - prod P1 accept
+09.01.2023 17:18:54.897 [P2] INFO  o.e.B.ResultAuction - leaving auction in topic:D1
+09.01.2023 17:18:54.897 [P1] INFO  o.e.B.ResultAuction - winner auction in topic:D1
+09.01.2023 17:18:54.897 [P2] INFO  o.e.B.ResultAuction - left 13.0 power
+09.01.2023 17:18:54.897 [P1] INFO  o.e.B.ResultAuction - left 5.0 power
+09.01.2023 17:18:59.793 [L1] INFO  o.e.B.RequestPrice - winner time: 1, prod: P1 ; price: 175,923  // 1759,231; power: 10,000  // 10,000
+09.01.2023 17:18:59.897 [P2] INFO  o.e.B.ReceiveTopicName - free power 13.0
+09.01.2023 17:18:59.897 [P1] INFO  o.e.B.ReceiveTopicName - free power 5.0
+09.01.2023 17:18:59.994 [L1] INFO  o.e.B.SendRequest - send msg {"maxPrice":3000.0,"power":10.0,"time":2} to 1 distributors
+09.01.2023 17:19:00.511 [P2] INFO  o.e.B.SendPrice - min price: 176.9230769230769; start price: 353.8461538461538
+09.01.2023 17:19:00.511 [P1] INFO  o.e.B.SendPrice - min price: 166.66666666666669; start price: 333.33333333333337
+09.01.2023 17:19:00.512 [P2] INFO  o.e.B.SendPrice - P2 participates in the auction in topic topic:D1
+09.01.2023 17:19:00.512 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D1
+09.01.2023 17:19:00.543 [P2] INFO  o.e.B.ReceiveAnswers - P2 stop down price in topic:D1
+09.01.2023 17:19:01.169 [D1] INFO  LR4.MockAgent - Mock agent D1 starts 1 behvaiours
+09.01.2023 17:19:01.170 [P1] INFO  LR4.MockAgent - Mock agent P1 starts 1 behvaiours
+09.01.2023 17:19:01.170 [P2] INFO  LR4.MockAgent - Mock agent P2 starts 1 behvaiours
+09.01.2023 17:19:01.275 [L1] INFO  LR4.MockAgent - Mock agent L1 starts 1 behvaiours
+09.01.2023 17:19:01.277 [L1] INFO  o.e.B.SendRequest - send msg {"maxPrice":4000.0,"power":10.0,"time":1} to 1 distributors
+09.01.2023 17:19:01.785 [P1] INFO  o.e.B.SendPrice - min price: 242.85714285714286; start price: 485.7142857142857
+09.01.2023 17:19:01.785 [P2] INFO  o.e.B.SendPrice - min price: 225.0; start price: 450.0
+09.01.2023 17:19:01.785 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D1
+09.01.2023 17:19:01.786 [P2] INFO  o.e.B.SendPrice - P2 participates in the auction in topic topic:D1
+09.01.2023 17:19:01.812 [P1] INFO  o.e.B.ReceiveAnswers - P1 stop down price in topic:D1
+09.01.2023 17:19:04.170 [L1] INFO  o.e.B.SendRequest - stop auction
+09.01.2023 17:19:04.171 [D1] INFO  o.e.B.AcceptRequestPrice - stop auction in topic:D1
+09.01.2023 17:19:04.172 [D1] INFO  o.e.B.CollectBitsParallel - prod P1, price 242.85714285714286
+09.01.2023 17:19:04.172 [D1] INFO  o.e.B.CollectBitsParallel - prod P2, price 242.0
+09.01.2023 17:19:04.172 [D1] INFO  o.e.B.ConfirmPrice - send confirm to P2
+09.01.2023 17:19:04.172 [P2] INFO  o.e.B.ResultAuction - send need split to D1, max power 8.0, req power 10.0
+09.01.2023 17:19:04.172 [D1] INFO  o.e.B.ConfirmPrice - prod P2 need split
+09.01.2023 17:19:04.173 [D1] INFO  o.e.B.SplitBehaviour - send split contract to P2
+09.01.2023 17:19:04.173 [P2] INFO  o.e.B.ResultAuction - send ok to D1
+09.01.2023 17:19:04.173 [D1] INFO  o.e.B.SplitBehaviour - send split contract to P1
+09.01.2023 17:19:04.173 [D1] INFO  o.e.B.SplitBehaviour - P2 accept
+09.01.2023 17:19:04.173 [P1] INFO  o.e.B.ResultAuction - send ok to D1
+09.01.2023 17:19:04.173 [D1] INFO  o.e.B.SplitBehaviour - P1 accept
+09.01.2023 17:19:04.174 [D1] INFO  o.e.B.SplitBehaviour - winner size 2
+09.01.2023 17:19:04.174 [P1] INFO  o.e.B.ResultAuction - winner auction in topic:D1
+09.01.2023 17:19:04.174 [P2] INFO  o.e.B.ResultAuction - winner auction in topic:D1
+09.01.2023 17:19:04.174 [P1] INFO  o.e.B.ResultAuction - left 5.0 power
+09.01.2023 17:19:04.174 [P2] INFO  o.e.B.ResultAuction - left 0.0 power
+09.01.2023 17:19:09.070 [L1] INFO  o.e.B.RequestPrice - winner time: 1, prod: P2 P1 ; price: 242,000 242,857  // 2421,714; power: 8,000 2,000  // 10,000
+09.01.2023 17:19:09.173 [P2] INFO  o.e.B.ReceiveTopicName - free power 0.0
+09.01.2023 17:19:09.173 [P1] INFO  o.e.B.ReceiveTopicName - free power 5.0
+09.01.2023 17:19:09.270 [L1] INFO  o.e.B.SendRequest - send msg {"maxPrice":4000.0,"power":10.0,"time":2} to 1 distributors
+09.01.2023 17:19:09.782 [P1] INFO  o.e.B.SendPrice - min price: 242.85714285714286; start price: 485.7142857142857
+09.01.2023 17:19:09.782 [P2] INFO  o.e.B.SendPrice - min price: 225.0; start price: 450.0
+09.01.2023 17:19:09.783 [P2] INFO  o.e.B.SendPrice - P2 participates in the auction in topic topic:D1
+09.01.2023 17:19:09.783 [P1] INFO  o.e.B.SendPrice - P1 participates in the auction in topic topic:D1
+09.01.2023 17:19:09.804 [P1] INFO  o.e.B.ReceiveAnswers - P1 stop down price in topic:D1

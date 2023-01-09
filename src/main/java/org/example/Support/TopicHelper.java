@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Support;
 
 import jade.core.AID;
 import jade.core.Agent;

@@ -1,6 +1,6 @@
 package org.example.BDistributor;
 
-import org.example.JsonParser;
+import org.example.Support.JsonParser;
 import org.example.Topic.ConsumerData;
 import jade.core.behaviours.Behaviour;
 import jade.lang.acl.ACLMessage;

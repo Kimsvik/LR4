@@ -1,6 +1,6 @@
 package org.example.BProducer;
 
-import org.example.JsonParser;
+import org.example.Support.JsonParser;
 import org.example.Topic.CurrentProduserData;
 import org.example.Topic.DistributorData;
 import org.example.Topic.ProducerData;

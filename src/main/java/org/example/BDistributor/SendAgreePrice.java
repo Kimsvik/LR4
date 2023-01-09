@@ -1,7 +1,7 @@
 package org.example.BDistributor;
 
-import org.example.DfHelper;
-import org.example.JsonParser;
+import org.example.Support.DfHelper;
+import org.example.Support.JsonParser;
 import org.example.Topic.WinnerProducerData;
 import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;

@@ -1,8 +1,8 @@
 package org.example.BDistributor;
 
-import org.example.DfHelper;
+import org.example.Support.DfHelper;
 import org.example.Topic.TopicData;
-import org.example.TopicHelper;
+import org.example.Support.TopicHelper;
 import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;
 import jade.lang.acl.ACLMessage;
