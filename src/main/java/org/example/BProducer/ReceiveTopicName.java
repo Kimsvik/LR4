@@ -2,7 +2,7 @@ package org.example.BProducer;
 
 import org.example.Topic.ProducerData;
 import org.example.TopicHelper;
-import org.example.Time.TimeClass;
+import org.example.TimeClass;
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.TickerBehaviour;

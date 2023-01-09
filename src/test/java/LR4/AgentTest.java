@@ -7,7 +7,7 @@ import org.example.Topic.ProducerData;
 import org.example.BProducer.ReceiveTopicName;
 import org.example.CFG.ConsumerCFG;
 import org.example.CFG.ProducerCFG;
-import org.example.Time.TimeClass;
+import org.example.TimeClass;
 import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.OneShotBehaviour;
 import lombok.SneakyThrows;

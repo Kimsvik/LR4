@@ -4,7 +4,7 @@ import org.example.DfHelper;
 import org.example.JsonParser;
 import org.example.Topic.WinnerProducerData;
 import org.example.CFG.ConsumerCFG;
-import org.example.Time.TimeClass;
+import org.example.TimeClass;
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.WakerBehaviour;

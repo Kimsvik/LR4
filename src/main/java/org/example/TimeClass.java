@@ -1,4 +1,4 @@
-package org.example.Time;
+package org.example;
 
 import lombok.Getter;
 
