@@ -20,7 +20,7 @@ public class MasStarter {
             AutorunnableAgent annotation = aClass.getDeclaredAnnotation(AutorunnableAgent.class);
             String agentName = annotation.name();
             int copy = annotation.count();
-            int startIndex = annotation.starIndex();
+            int startIndex = annotation.startIndex();
             for (int i =startIndex; i < copy+startIndex; i++){
                 createdAgents.put(agentName+""+i, aClass.getName());
             }

@@ -2,11 +2,11 @@ package org.example.Agents;
 
 import org.example.DfHelper;
 import org.example.AutorunnableAgent;
-import org.example.BDistributer.AcceptRequest;
+import org.example.BDistributor.AcceptRequest;
 import jade.core.Agent;
 import lombok.extern.slf4j.Slf4j;
 
-@AutorunnableAgent(name = "D", starIndex = 1, count = 3)
+@AutorunnableAgent(name = "D", startIndex = 1, count = 3)
 @Slf4j
 public class DistributorAgent extends Agent {
 

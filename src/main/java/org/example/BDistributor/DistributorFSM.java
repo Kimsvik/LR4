@@ -1,17 +1,17 @@
-package org.example.BDistributer;
+package org.example.BDistributor;
 
 import org.example.External.ConsumerData;
 import org.example.External.TopicData;
 import org.example.External.WinnerProducerData;
 import jade.core.behaviours.FSMBehaviour;
 
-public class DistributerFSM extends FSMBehaviour {
+public class DistributorFSM extends FSMBehaviour {
     private static final String SEND_TOPIC="send_topic",
             SEND_DATA="send_data",
             COLLECT="collect",
             CONFIRM_PRICE = "confirm_price";
 
-    public DistributerFSM(ConsumerData consumerData) {
+    public DistributorFSM(ConsumerData consumerData) {
         TopicData topicData = new TopicData();
         WinnerProducerData winner = new WinnerProducerData();
 

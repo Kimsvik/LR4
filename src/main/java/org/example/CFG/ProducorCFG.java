@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "cfg")
 @Getter
 @Setter
-public class ProducerCFG {
+public class ProducorCFG {
 
     @XmlElement
     private String type;

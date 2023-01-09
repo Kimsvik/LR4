@@ -1,4 +1,4 @@
-package org.example.BDistributer;
+package org.example.BDistributor;
 
 import org.example.DfHelper;
 import org.example.JsonParser;

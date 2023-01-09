@@ -12,7 +12,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
-@AutorunnableAgent(name = "L", starIndex = 1, count = 3)
+@AutorunnableAgent(name = "L", startIndex = 1, count = 3)
 @Slf4j
 public class ConsumerAgent extends Agent {
     @Override

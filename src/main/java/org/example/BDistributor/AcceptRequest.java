@@ -1,4 +1,4 @@
-package org.example.BDistributer;
+package org.example.BDistributor;
 
 import org.example.JsonParser;
 import org.example.External.ConsumerData;
@@ -17,7 +17,7 @@ public class AcceptRequest extends Behaviour {
         ACLMessage msg = myAgent.receive(mt);
         if (msg != null) {
             ConsumerData consumerData = JsonParser.parseData(msg.getContent(), ConsumerData.class);
-            myAgent.addBehaviour(new DistributerFSM(consumerData));
+            myAgent.addBehaviour(new DistributorFSM(consumerData));
         } else {
             block();
         }

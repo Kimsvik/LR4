@@ -4,7 +4,7 @@ import org.example.DfHelper;
 import org.example.AutorunnableAgent;
 import org.example.External.ProducerData;
 import org.example.BProducer.ReceiveTopicName;
-import org.example.CFG.ProducerCFG;
+import org.example.CFG.ProducorCFG;
 import jade.core.Agent;
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,7 +13,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
-@AutorunnableAgent(name = "P", starIndex = 1, count = 3)
+@AutorunnableAgent(name = "P", startIndex = 1, count = 3)
 @Slf4j
 public class ProducerAgent extends Agent {
 
@@ -22,11 +22,11 @@ public class ProducerAgent extends Agent {
         DfHelper.registerAgent(this, "producer");
         log.info("agent {} is ready", this.getLocalName());
 
-        ProducerCFG cfg;
+        ProducorCFG cfg;
         try {
-            JAXBContext context = JAXBContext.newInstance(ProducerCFG.class);
+            JAXBContext context = JAXBContext.newInstance(ProducorCFG.class);
             Unmarshaller jaxbUnmarshaller = context.createUnmarshaller();
-            cfg = (ProducerCFG) jaxbUnmarshaller.unmarshal(
+            cfg = (ProducorCFG) jaxbUnmarshaller.unmarshal(
                     new File("src/main/resources/LR4/Producer/"  + getLocalName() + ".xml"));
         } catch (JAXBException e) {
             throw new RuntimeException(e);

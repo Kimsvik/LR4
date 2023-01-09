@@ -2,11 +2,11 @@ package LR4;
 
 import org.example.DfHelper;
 import org.example.BConsumer.SendRequest;
-import org.example.BDistributer.AcceptRequest;
+import org.example.BDistributor.AcceptRequest;
 import org.example.External.ProducerData;
 import org.example.BProducer.ReceiveTopicName;
 import org.example.CFG.ConsumerCFG;
-import org.example.CFG.ProducerCFG;
+import org.example.CFG.ProducorCFG;
 import org.example.TimeClass;
 import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.OneShotBehaviour;
@@ -57,15 +57,15 @@ public class AgentTest {
     @SneakyThrows
     void scene2Test(){
         createDistributor("D1");
-        createProducer("P1", 15);
-        createProducer("P2", 20);
+        createProducer("P1", 12);
+        createProducer("P2", 13);
         Thread.sleep(100);
         createConsumer("L1", 10, 300);
         Thread.sleep(500);
         Thread.sleep(time);
         resBeh = inner.getBeh();
         Thread.sleep(500);
-        Assertions.assertEquals(1, resBeh.onEnd());
+        Assertions.assertEquals(2, resBeh.onEnd());
     }
     /*
     Успешный аукцион с двумя участниками. Задать такое количество покупаемой мощности,
@@ -81,7 +81,7 @@ public class AgentTest {
         createProducer("P1", 10);
         createProducer("P2", 12);
         Thread.sleep(100);
-        createConsumer("L1", 10, 250);
+        createConsumer("L1", 10, 400);
         Thread.sleep(500);
         Thread.sleep(time);
         resBeh = inner.getBeh();
@@ -122,7 +122,7 @@ public class AgentTest {
             @Override
             public void action() {
                 DfHelper.registerAgent(myAgent, "producer");
-                ProducerCFG cfg = new ProducerCFG();
+                ProducorCFG cfg = new ProducorCFG();
                 cfg.setA(power);
                 cfg.setType("TPS");
                 myAgent.addBehaviour(new ReceiveTopicName(new ProducerData(cfg)));

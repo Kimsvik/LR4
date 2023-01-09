@@ -1,6 +1,6 @@
 package org.example.External;
 
-import org.example.CFG.ProducerCFG;
+import org.example.CFG.ProducorCFG;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,13 +8,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ProducerData {
 
-    private final ProducerCFG dataCFG;
+    private final ProducorCFG dataCFG;
 
     private double power;
     private double minPrice;
     private String lockKey = new String();
 
-    public ProducerData(ProducerCFG dataCFG) {
+    public ProducerData(ProducorCFG dataCFG) {
         this.dataCFG = dataCFG;
     }
 

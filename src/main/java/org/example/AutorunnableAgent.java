@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 public @interface AutorunnableAgent {
     String name();
     int count() default 1;
-    int starIndex() default 1;
+    int startIndex() default 1;
 }
