@@ -12,7 +12,7 @@ public class MockAgent extends Agent {
         log.info("Mock agent {} starts {} behvaiours", this.getLocalName(), getArguments().length);
         for (Object arg : getArguments()) {
             if (!(arg instanceof Behaviour)){
-                throw new RuntimeException("WRONG USING MOCK AGENT!!!!!");
+                throw new RuntimeException("Wrong mock Agent");
             }
             Behaviour beh = (Behaviour) arg;
             this.addBehaviour(beh);
