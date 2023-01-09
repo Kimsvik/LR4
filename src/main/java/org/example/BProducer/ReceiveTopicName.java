@@ -1,8 +1,8 @@
 package org.example.BProducer;
 
-import org.example.External.ProducerData;
+import org.example.Topic.ProducerData;
 import org.example.TopicHelper;
-import org.example.TimeClass;
+import org.example.Time.TimeClass;
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.TickerBehaviour;

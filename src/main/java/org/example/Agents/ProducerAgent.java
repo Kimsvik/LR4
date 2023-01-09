@@ -2,9 +2,9 @@ package org.example.Agents;
 
 import org.example.DfHelper;
 import org.example.AutorunnableAgent;
-import org.example.External.ProducerData;
+import org.example.Topic.ProducerData;
 import org.example.BProducer.ReceiveTopicName;
-import org.example.CFG.ProducorCFG;
+import org.example.CFG.ProducerCFG;
 import jade.core.Agent;
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,21 +13,21 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
-@AutorunnableAgent(name = "P", startIndex = 1, count = 3)
+@AutorunnableAgent(name = "P", starIndex = 1, count = 3)
 @Slf4j
 public class ProducerAgent extends Agent {
 
     @Override
     protected void setup() {
         DfHelper.registerAgent(this, "producer");
-        log.info("agent {} is ready", this.getLocalName());
+        log.info("agent {} is start", this.getLocalName());
 
-        ProducorCFG cfg;
+        ProducerCFG cfg;
         try {
-            JAXBContext context = JAXBContext.newInstance(ProducorCFG.class);
+            JAXBContext context = JAXBContext.newInstance(ProducerCFG.class);
             Unmarshaller jaxbUnmarshaller = context.createUnmarshaller();
-            cfg = (ProducorCFG) jaxbUnmarshaller.unmarshal(
-                    new File("src/main/resources/LR4/Producer/"  + getLocalName() + ".xml"));
+            cfg = (ProducerCFG) jaxbUnmarshaller.unmarshal(
+                    new File("src/main/resources/Producer/"  + getLocalName() + ".xml"));
         } catch (JAXBException e) {
             throw new RuntimeException(e);
         }

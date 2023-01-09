@@ -13,6 +13,12 @@ import java.util.stream.Collectors;
 
 public class DfHelper {
 
+    /**
+     * register an agent in DF Agent with specific service.
+     * @param a - agent
+     * @param serviceName - service name
+     * @return if registration was successful
+     */
     public static boolean registerAgent(Agent a, String serviceName){
         DFAgentDescription dfd = new DFAgentDescription();
         dfd.setName(a.getAID());
@@ -30,6 +36,12 @@ public class DfHelper {
         }
     }
 
+    /**
+     * find all agents in DF registered with given service name
+     * @param a - agent
+     * @param serviceName - service name
+     * @return collection of found agents
+     */
     public static List<AID> findAgents(Agent a, String serviceName){
         DFAgentDescription dfd = new DFAgentDescription();
         ServiceDescription sd = new ServiceDescription();

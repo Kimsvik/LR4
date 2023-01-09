@@ -1,7 +1,7 @@
 package org.example.BProducer;
 
-import org.example.External.CurrentProduserData;
-import org.example.External.ProducerData;
+import org.example.Topic.CurrentProduserData;
+import org.example.Topic.ProducerData;
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
 import jade.lang.acl.ACLMessage;

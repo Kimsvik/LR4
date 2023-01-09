@@ -1,7 +1,7 @@
 package org.example.BDistributor;
 
 import org.example.JsonParser;
-import org.example.External.ConsumerData;
+import org.example.Topic.ConsumerData;
 import jade.core.behaviours.Behaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
@@ -17,7 +17,7 @@ public class AcceptRequest extends Behaviour {
         ACLMessage msg = myAgent.receive(mt);
         if (msg != null) {
             ConsumerData consumerData = JsonParser.parseData(msg.getContent(), ConsumerData.class);
-            myAgent.addBehaviour(new DistributorFSM(consumerData));
+            myAgent.addBehaviour(new DistributerFSM(consumerData));
         } else {
             block();
         }

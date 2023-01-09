@@ -1,6 +1,6 @@
 package org.example.BDistributor;
 
-import org.example.External.TopicData;
+import org.example.Topic.TopicData;
 import jade.core.behaviours.Behaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;

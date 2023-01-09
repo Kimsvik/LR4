@@ -1,6 +1,6 @@
 package org.example.BDistributor;
 
-import org.example.External.TopicData;
+import org.example.Topic.TopicData;
 import jade.core.AID;
 import jade.core.behaviours.ParallelBehaviour;
 import lombok.extern.slf4j.Slf4j;

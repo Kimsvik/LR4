@@ -1,7 +1,7 @@
 package org.example.BDistributor;
 
 import org.example.DfHelper;
-import org.example.External.TopicData;
+import org.example.Topic.TopicData;
 import org.example.TopicHelper;
 import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;

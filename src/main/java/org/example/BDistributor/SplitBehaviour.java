@@ -1,8 +1,8 @@
 package org.example.BDistributor;
 
-import org.example.External.ConsumerData;
-import org.example.External.TopicData;
-import org.example.External.WinnerProducerData;
+import org.example.Topic.ConsumerData;
+import org.example.Topic.TopicData;
+import org.example.Topic.WinnerProducerData;
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
 import jade.lang.acl.ACLMessage;

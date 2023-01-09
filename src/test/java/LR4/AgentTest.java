@@ -3,11 +3,11 @@ package LR4;
 import org.example.DfHelper;
 import org.example.BConsumer.SendRequest;
 import org.example.BDistributor.AcceptRequest;
-import org.example.External.ProducerData;
+import org.example.Topic.ProducerData;
 import org.example.BProducer.ReceiveTopicName;
 import org.example.CFG.ConsumerCFG;
-import org.example.CFG.ProducorCFG;
-import org.example.TimeClass;
+import org.example.CFG.ProducerCFG;
+import org.example.Time.TimeClass;
 import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.OneShotBehaviour;
 import lombok.SneakyThrows;
@@ -24,11 +24,6 @@ public class AgentTest {
 
     private long time = TimeClass.getTime() + 100;
 
-    /*
-    условия:    избыток мощности у одного производителя, 1 производитель
-    результат:  0 (запрос отклонен - завышенная цена)
-    */
-
     @Test
     @SneakyThrows
     void scene1Test(){
@@ -37,9 +32,9 @@ public class AgentTest {
         createDistributor("D3");
         createProducer("P1", 50);
         Thread.sleep(100);
-        createConsumer("L1", 5, 200);
-        createConsumer("L2", 7, 300);
-        createConsumer("L3", 8, 250);
+        createConsumer("L1", 5, 100);
+        createConsumer("L2", 7, 200);
+        createConsumer("L3", 8, 150);
         Thread.sleep(500);
         Thread.sleep(time);
         resBeh = inner.getBeh();
@@ -53,11 +48,12 @@ public class AgentTest {
     однако контракт отклоняется поставщиком из-за большой цены.
     */
 
+
     @Test
     @SneakyThrows
     void scene2Test(){
         createDistributor("D1");
-        createProducer("P1", 12);
+        createProducer("P1", 15);
         createProducer("P2", 13);
         Thread.sleep(100);
         createConsumer("L1", 10, 300);
@@ -65,7 +61,7 @@ public class AgentTest {
         Thread.sleep(time);
         resBeh = inner.getBeh();
         Thread.sleep(500);
-        Assertions.assertEquals(2, resBeh.onEnd());
+        Assertions.assertEquals(1, resBeh.onEnd());
     }
     /*
     Успешный аукцион с двумя участниками. Задать такое количество покупаемой мощности,
@@ -74,19 +70,20 @@ public class AgentTest {
     и один из агентов-производителей продает по удовлетворительной цене запрошенную мощность.
     */
 
+
     @Test
     @SneakyThrows
     void scene3Test(){
         createDistributor("D1");
-        createProducer("P1", 10);
-        createProducer("P2", 12);
+        createProducer("P1", 7);
+        createProducer("P2", 8);
         Thread.sleep(100);
         createConsumer("L1", 10, 400);
         Thread.sleep(500);
         Thread.sleep(time);
         resBeh = inner.getBeh();
         Thread.sleep(500);
-        Assertions.assertEquals(1, resBeh.onEnd());
+        Assertions.assertEquals(2, resBeh.onEnd());
     }
     /*
     Дефицит мощности в системе. Задать такое количество покупаемой мощности,
@@ -94,6 +91,7 @@ public class AgentTest {
     Ожидаемый результат: агент дистрибьютор должен разбить контракт на несколько частей
     и закупить требуемое количество у различных поставщиков.
     */
+
 
     @BeforeEach
     void beforeEach(){
@@ -122,7 +120,7 @@ public class AgentTest {
             @Override
             public void action() {
                 DfHelper.registerAgent(myAgent, "producer");
-                ProducorCFG cfg = new ProducorCFG();
+                ProducerCFG cfg = new ProducerCFG();
                 cfg.setA(power);
                 cfg.setType("TPS");
                 myAgent.addBehaviour(new ReceiveTopicName(new ProducerData(cfg)));

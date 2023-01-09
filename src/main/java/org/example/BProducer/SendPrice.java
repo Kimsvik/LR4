@@ -1,9 +1,9 @@
 package org.example.BProducer;
 
 import org.example.JsonParser;
-import org.example.External.CurrentProduserData;
-import org.example.External.DistributorData;
-import org.example.External.ProducerData;
+import org.example.Topic.CurrentProduserData;
+import org.example.Topic.DistributorData;
+import org.example.Topic.ProducerData;
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
 import jade.lang.acl.ACLMessage;
@@ -24,7 +24,7 @@ public class SendPrice extends Behaviour {
         this.topic = topic;
         this.producerData = producerData;
         this.currentProduserData = currentProduserData;
-//        log.debug("reg topic");
+        log.debug("reg topic");
         mt = MessageTemplate.and(
                 MessageTemplate.MatchPerformative(ACLMessage.PROPOSE),
                 MessageTemplate.and(

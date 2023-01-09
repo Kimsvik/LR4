@@ -1,9 +1,9 @@
 package org.example.BDistributor;
 
 import org.example.JsonParser;
-import org.example.External.ConsumerData;
-import org.example.External.DistributorData;
-import org.example.External.TopicData;
+import org.example.Topic.ConsumerData;
+import org.example.Topic.DistributorData;
+import org.example.Topic.TopicData;
 import jade.core.Agent;
 import jade.core.behaviours.WakerBehaviour;
 import jade.lang.acl.ACLMessage;

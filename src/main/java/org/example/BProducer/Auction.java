@@ -1,6 +1,6 @@
 package org.example.BProducer;
 
-import org.example.External.CurrentProduserData;
+import org.example.Topic.CurrentProduserData;
 import jade.core.AID;
 import jade.core.behaviours.ParallelBehaviour;
 
@@ -18,5 +18,6 @@ public class Auction extends ParallelBehaviour {
 
     public void onStart() {
         addSubBehaviour(new ReceiveAnswers(topic, currentProduserData));
+        addSubBehaviour(new StopAuction(topic));
     }
 }
