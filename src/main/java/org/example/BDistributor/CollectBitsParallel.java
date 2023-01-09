@@ -1,6 +1,6 @@
 package org.example.BDistributor;
 
-import org.example.Topic.TopicData;
+import org.example.Topic.Data;
 import jade.core.AID;
 import jade.core.behaviours.ParallelBehaviour;
 import lombok.extern.slf4j.Slf4j;
@@ -8,9 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CollectBitsParallel extends ParallelBehaviour {
 
-    private TopicData topicData;
+    private Data topicData;
 
-    public CollectBitsParallel(TopicData topicData) {
+    public CollectBitsParallel(Data topicData) {
         super(ParallelBehaviour.WHEN_ANY);
         this.topicData = topicData;
     }

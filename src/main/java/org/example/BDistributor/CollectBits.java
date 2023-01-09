@@ -1,6 +1,6 @@
 package org.example.BDistributor;
 
-import org.example.Topic.TopicData;
+import org.example.Topic.Data;
 import jade.core.behaviours.Behaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
@@ -9,13 +9,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CollectBits extends Behaviour {
 
-    private TopicData topicData;
+    private Data topicData;
 
     private MessageTemplate mt = MessageTemplate.and(
                 MessageTemplate.MatchPerformative(ACLMessage.INFORM),
                 MessageTemplate.MatchProtocol("price"));
 
-    public CollectBits(TopicData topicData) {
+    public CollectBits(Data topicData) {
         this.topicData = topicData;
     }
 

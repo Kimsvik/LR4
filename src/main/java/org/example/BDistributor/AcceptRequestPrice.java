@@ -1,6 +1,6 @@
 package org.example.BDistributor;
 
-import org.example.Topic.TopicData;
+import org.example.Topic.Data;
 import jade.core.behaviours.Behaviour;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
@@ -14,9 +14,9 @@ public class AcceptRequestPrice extends Behaviour {
             MessageTemplate.MatchPerformative(ACLMessage.REQUEST),
             MessageTemplate.MatchProtocol("result price"));
 
-    private TopicData data;
+    private Data data;
 
-    public AcceptRequestPrice(TopicData data) {
+    public AcceptRequestPrice(Data data) {
         this.data = data;
     }
 

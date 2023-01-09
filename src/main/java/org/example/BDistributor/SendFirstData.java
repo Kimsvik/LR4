@@ -3,18 +3,18 @@ package org.example.BDistributor;
 import org.example.Support.JsonParser;
 import org.example.Topic.ConsumerData;
 import org.example.Topic.DistributorData;
-import org.example.Topic.TopicData;
+import org.example.Topic.Data;
 import jade.core.Agent;
 import jade.core.behaviours.WakerBehaviour;
 import jade.lang.acl.ACLMessage;
 
 
 public class SendFirstData extends WakerBehaviour {
-    private TopicData topicData;
+    private Data topicData;
     private ConsumerData consumerData;
 
 
-    public SendFirstData(Agent a, long timeout, TopicData topicData, ConsumerData consumerData) {
+    public SendFirstData(Agent a, long timeout, Data topicData, ConsumerData consumerData) {
         super(a, timeout);
         this.topicData = topicData;
         this.consumerData = consumerData;

@@ -10,7 +10,7 @@ import lombok.SneakyThrows;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JadeTestingKit {
+public class JadeTestKit {
     private AgentContainer mainContainer;
     private List<AgentController> agents = new ArrayList<>();
 
@@ -27,7 +27,7 @@ public class JadeTestingKit {
 
     @SneakyThrows
     public void createAgent(String agentName, Behaviour ... behs){
-        AgentController newAgent = mainContainer.createNewAgent(agentName, MockAgent.class.getName(), behs);
+        AgentController newAgent = mainContainer.createNewAgent(agentName, AgentSup.class.getName(), behs);
         agents.add(newAgent);
         newAgent.start();
     }

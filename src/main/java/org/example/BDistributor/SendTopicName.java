@@ -1,7 +1,7 @@
 package org.example.BDistributor;
 
 import org.example.Support.DfHelper;
-import org.example.Topic.TopicData;
+import org.example.Topic.Data;
 import org.example.Support.TopicHelper;
 import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;
@@ -11,10 +11,10 @@ import java.util.List;
 
 public class SendTopicName extends OneShotBehaviour {
 
-    private TopicData data;
+    private Data data;
     private List<AID> producers;
 
-    public SendTopicName(TopicData data) {
+    public SendTopicName(Data data) {
         this.data = data;
     }
 

@@ -16,9 +16,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class AgentTest {
+public class TestStart {
 
-    private JadeTestingKit kit = new JadeTestingKit();
+    private JadeTestKit kit = new JadeTestKit();
     private SendRequest inner = null;
     private Behaviour resBeh;
 

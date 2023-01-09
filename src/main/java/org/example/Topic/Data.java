@@ -9,7 +9,7 @@ import java.util.Map;
 
 @Getter
 @Setter
-public class TopicData {
+public class Data {
     private AID topic;
     private Map<AID, Double> bitsData = new HashMap<>();
 

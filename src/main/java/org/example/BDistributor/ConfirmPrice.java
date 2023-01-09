@@ -1,7 +1,7 @@
 package org.example.BDistributor;
 
 import org.example.Topic.ConsumerData;
-import org.example.Topic.TopicData;
+import org.example.Topic.Data;
 import org.example.Topic.WinnerProducerData;
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
@@ -17,7 +17,7 @@ import java.util.Map;
 @Slf4j
 public class ConfirmPrice extends Behaviour {
 
-    private TopicData topicData;
+    private Data topicData;
     private ConsumerData consumerData;
     private WinnerProducerData winner;
     private boolean isEnd = false;
@@ -34,7 +34,7 @@ public class ConfirmPrice extends Behaviour {
             MessageTemplate.MatchProtocol("confirm power"));
 
 
-    public ConfirmPrice(TopicData topicData, ConsumerData consumerData,
+    public ConfirmPrice(Data topicData, ConsumerData consumerData,
                         WinnerProducerData winner) {
         this.topicData = topicData;
         this.consumerData = consumerData;

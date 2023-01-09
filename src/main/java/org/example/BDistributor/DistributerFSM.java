@@ -1,7 +1,7 @@
 package org.example.BDistributor;
 
 import org.example.Topic.ConsumerData;
-import org.example.Topic.TopicData;
+import org.example.Topic.Data;
 import org.example.Topic.WinnerProducerData;
 import jade.core.behaviours.FSMBehaviour;
 
@@ -13,7 +13,7 @@ public class DistributerFSM extends FSMBehaviour {
             CONFIRM_PRICE = "confirm_price";
 
     public DistributerFSM(ConsumerData consumerData) {
-        TopicData topicData = new TopicData();
+        Data topicData = new Data();
         WinnerProducerData winner = new WinnerProducerData();
 
         registerFirstState(new SendTopicName(topicData), SEND_TOPIC);

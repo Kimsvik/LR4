@@ -1,7 +1,7 @@
 package org.example.BDistributor;
 
 import org.example.Topic.ConsumerData;
-import org.example.Topic.TopicData;
+import org.example.Topic.Data;
 import org.example.Topic.WinnerProducerData;
 import jade.core.AID;
 import jade.core.behaviours.Behaviour;
@@ -14,7 +14,7 @@ import java.util.List;
 public class SplitBehaviour extends Behaviour {
 
 
-    private TopicData topicData;
+    private Data topicData;
     private ConsumerData consumerData;
     private WinnerProducerData winner;
     private List<AID> sortProducer;
@@ -27,7 +27,7 @@ public class SplitBehaviour extends Behaviour {
                     MessageTemplate.MatchPerformative(ACLMessage.REFUSE)),
             MessageTemplate.MatchProtocol("confirm power"));
 
-    public SplitBehaviour(TopicData topicData, ConsumerData consumerData,
+    public SplitBehaviour(Data topicData, ConsumerData consumerData,
                           WinnerProducerData winner, List<AID> sortProducer) {
         this.topicData = topicData;
         this.consumerData = consumerData;
