@@ -70,7 +70,6 @@ public class AgentTest {
     и один из агентов-производителей продает по удовлетворительной цене запрошенную мощность.
     */
 
-
     @Test
     @SneakyThrows
     void scene3Test(){
