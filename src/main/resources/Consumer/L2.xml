@@ -2,7 +2,7 @@
 <!--foodIndustry-->
 <cfg>
     <Pnom>18.7</Pnom>
-    <maxPrice>200.0</maxPrice>
+    <maxPrice>500.0</maxPrice>
     <load>95</load> <!--H1-->
     <load>90</load> <!--H2-->
     <load>90</load> <!--H3-->

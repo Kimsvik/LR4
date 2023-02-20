@@ -80,7 +80,7 @@ public class ResultAuction extends Behaviour {
                 case ACLMessage.CONFIRM -> {
                     producerData.changePower(Double.parseDouble(msg.getContent()));
                     isEnd = true;
-                    log.info("winner auction in topic:{}", msg.getSender().getLocalName());
+                    log.info("\u001B[34m" + "winner auction in topic:{}" + "\u001B[0m", msg.getSender().getLocalName());
                 }
 
                 case ACLMessage.CANCEL -> {

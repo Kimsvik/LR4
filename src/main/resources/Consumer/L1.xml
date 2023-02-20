@@ -2,7 +2,7 @@
 <!--chemIndustry-->
 <cfg>
     <Pnom>18.7</Pnom>
-    <maxPrice>200.0</maxPrice>
+    <maxPrice>500.0</maxPrice>
     <load>20</load> <!--H1-->
     <load>20</load> <!--H2-->
     <load>20</load> <!--H3-->

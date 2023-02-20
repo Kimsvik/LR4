@@ -5,6 +5,7 @@ import jade.core.AID;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.codehaus.jackson.annotate.JsonIgnore;
 
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ import java.util.Map;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Slf4j
 public class WinnerProducerData {
 
     private Map<String, List<Double>> winner = new HashMap<>();
@@ -56,6 +58,7 @@ public class WinnerProducerData {
         double resultPrice = 0;
         for (String prod: winner.keySet()) {
             resultPrice = resultPrice + winner.get(prod).get(0) * winner.get(prod).get(1);
+            log.info("winner is {} with price = {}", winner.get(prod), resultPrice);
         }
 
         return resultPrice;

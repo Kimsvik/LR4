@@ -2,11 +2,13 @@ package org.example.Topic;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 
 @Getter
+@Slf4j
 public class CurrentProduserData {
 
-    private final double priceDown = 1;
+    private final double priceDown = 10;
     private double currentPrice;
     private double minPrice;
 
@@ -26,6 +28,7 @@ public class CurrentProduserData {
             currentPrice = minPrice;
             auction = false;
         }
+        log.info("current Price: {}", currentPrice);
 //        } else {
 //            currentPrice = minPrice;
 //            auction = false;

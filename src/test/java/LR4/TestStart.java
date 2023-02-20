@@ -28,13 +28,13 @@ public class TestStart {
     @SneakyThrows
     void scene1Test(){
         createDistributor("D1");
-        createDistributor("D2");
-        createDistributor("D3");
+//        createDistributor("D2");
+//        createDistributor("D3");
         createProducer("P1", 50);
         Thread.sleep(100);
         createConsumer("L1", 5, 100);
-        createConsumer("L2", 7, 200);
-        createConsumer("L3", 8, 150);
+//        createConsumer("L2", 7, 200);
+//        createConsumer("L3", 8, 150);
         Thread.sleep(500);
         Thread.sleep(time);
         resBeh = inner.getBeh();

@@ -27,7 +27,7 @@ public class ReceiveTopicName extends Behaviour {
         myAgent.addBehaviour(new TickerBehaviour(myAgent, TimeClass.getTime()) {
             @Override
             protected void onTick() {
-                log.info("free power {}", producerData.getPower());
+                log.info("\u001B[32m" + "unsold power {}" + "\u001B[0m", producerData.getPower());
             }
         });
     }

@@ -25,7 +25,6 @@ public class CollectBits extends Behaviour {
         if (receive != null){
             log.debug("get msg {} from {}", receive.getContent(), receive.getSender().getLocalName());
             topicData.getBitsData().put(receive.getSender(), Double.parseDouble(receive.getContent()));
-
         } else {
             block();
         }

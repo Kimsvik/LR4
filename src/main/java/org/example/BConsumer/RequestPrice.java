@@ -68,7 +68,7 @@ public class RequestPrice extends Behaviour {
                 @Override
                 protected void onWake() {
                     if(winner == null) {
-                        log.info("winner time: {}, REJECTED, req power: {}",
+                        log.info("\u001B[31m" + "winner time: {}, REJECTED, req power: {}" + "\u001B[0m",
                                 time, cfg.getPower(time));
                     } else {
                         double totalPrice = 0;

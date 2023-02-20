@@ -2,7 +2,7 @@
 <!--foodCord 2-->
 <cfg>
     <Pnom>10.0</Pnom>
-    <maxPrice>200.0</maxPrice>
+    <maxPrice>500.0</maxPrice>
     <load>20</load> <!--H1-->
     <load>20</load> <!--H2-->
     <load>20</load> <!--H3-->
